@@ -14,7 +14,11 @@ void main() async {
 
   runApp(ChangeNotifierProvider(
     create: (context) => GoogleSignSignOutProvider(),
-    child: MaterialApp(title: "Lista de Tarefas", home: LoginPage()),
+    child: MaterialApp(
+      title: "Lista de Tarefas",
+      home: LoginPage(),
+      debugShowCheckedModeBanner: false,
+    ),
   ));
 }
 
